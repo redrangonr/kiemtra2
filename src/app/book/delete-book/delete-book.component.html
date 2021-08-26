@@ -1,9 +1,11 @@
 <h1>Xoa sanh</h1>
-<label>Title</label>
+<h3>Title</h3>
 <div>{{books.title}}</div>
-<label>Author</label>
+<h3>Author</h3>
 <div>{{books.author}}</div>
-<label>Description</label>
+<h3>Description</h3>
 <div>{{books.description}}</div>
-<a routerLink="/list" (click)="delete(books.id)">Delete</a>
-<a routerLink="/list">Back</a>
+<button><a routerLink="/list" (click)="delete(books.id)">Delete</a></button>
+<span><a>     |    </a></span>
+<button><a routerLink="/list">Back</a></button>
+

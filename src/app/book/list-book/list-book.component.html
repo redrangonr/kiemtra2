@@ -1,13 +1,13 @@
 <h1>Danh sách </h1>
-<a routerLink='/create'>Create</a>
-<h1>co tat ca {{books.length}} cuon sach</h1>
-<table>
+<h2><a routerLink='/create'>Create</a></h2>
+<h3>co tat ca {{books.length}} cuon sach</h3>
+<table class="table">
   <thead>
   <tr>
     <td>STT</td>
     <td>Tên</td>
     <td>tac gia</td>
-    <td>Mô tả</td>
+    <td>Action</td>
   </tr>
   </thead>
   <tbody>
@@ -15,9 +15,8 @@
     <td>{{i + 1}}</td>
     <td><a [routerLink]="['/detail',book.id]">{{book.title}}</a></td>
     <td>{{book.author}}</td>
-
-    <td><a [routerLink]="['/edit',book.id]">Edit</a></td>
-    <td><a [routerLink]="['/delete',book.id]">delete</a></td>
+    <td><a [routerLink]="['/edit',book.id]">Edit</a><a> | </a>
+    <a [routerLink]="['/delete',book.id]">delete</a></td>
   </tr>
   </tbody>
 </table>

@@ -1,10 +1,18 @@
-<h1>Xoa sanh</h1>
-<label>Title</label>
-<a routerLink="/list">danh sach</a>
-<div>{{books.title}}</div>
-<label>Author</label>
-<div>{{books.author}}</div>
-<label>Description</label>
-<div>{{books.description}}</div>
 
-
+<div class="card">
+  <div class="card-header">
+<h3 style="text-align: center">Chi tiet sach</h3>
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <h1>Chi tiet sach</h1>
+      <a style="text-align: right" href="#" class="btn btn-primary" routerLink="/list">danh sach</a>
+      <h4>Title</h4>
+      <div>{{books.title}}</div>
+      <h4>Author</h4>
+      <div>{{books.author}}</div>
+      <h4>Description</h4>
+      <div>{{books.description}}</div>
+    </blockquote>
+  </div>
+</div>
