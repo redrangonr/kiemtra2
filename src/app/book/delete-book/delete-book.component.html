@@ -1,0 +1,9 @@
+<h1>Xoa sanh</h1>
+<label>Title</label>
+<div>{{books.title}}</div>
+<label>Author</label>
+<div>{{books.author}}</div>
+<label>Description</label>
+<div>{{books.description}}</div>
+<a routerLink="/list" (click)="delete(books.id)">Delete</a>
+<a routerLink="/list">Back</a>

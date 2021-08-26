@@ -1,0 +1,22 @@
+<h1>sản phẩm</h1>
+<form [formGroup]="bookForm" (ngSubmit)="Submit()">
+  <table>
+    <tr>
+      <td>Tên sach</td>
+      <td><input type="text" formControlName="title" value="{{books.title}}"></td>
+    </tr>
+    <tr>
+      <td>tac gia</td>
+      <td><input type="text" formControlName="author" value="{{books.author}}"></td>
+    </tr>
+    <tr>
+      <td>Binh luan</td>
+      <td><input type="text" formControlName="description" value="{{books.description}}" ></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Create</button></td>
+    </tr>
+  </table>
+</form>
+
